@@ -1,7 +1,7 @@
 % Awesome CV LaTeX Template
 %
 % This template has been downloaded from:
-% https://github.com/huajh/huajh-awesome-latex-cv
+% https://github.com/huajh/awesome-latex-cv
 %
 % Author:
 % Junhao Hua
@@ -11,81 +11,79 @@
 \sectionTitle{Projects \& Experiences}{\faCode}
 
 \begin{experiences}
+
+
   \experience
-  {} {A corrected transport-velocity formulation for fluid and structural mechanics with SPH}{}{}
-  {}    {
-    \begin{itemize}
-    \item Developed a corrected transport velocity formulation in SPH to model
-      fluid and elastic dynamics.
-    \item The solver is developed in PySPH % (link{https://github.com/pypr/pysph}{PySPH})
-    \item Fully reproducible and open source. (\link{https://gitlab.com/pypr/ctvf}{Code link})
-      \faGithub: \link{https://gitlab.com/pypr/ctvf}{https://gitlab.com/pypr/ctvf}
-    \end{itemize}
-  }
-  {PySPH, SPH, Freesurfaceproblems, Python}
+    {}   {A corrected transport-velocity formulation for fluid and structural mechanics with SPH}{}{}
+    {} {
+                      \begin{itemize}
+                      \item Developed a corrected transport velocity formulation in SPH to model
+                        fluid and elastic dynamics.
+                      \item The solver is developed in PySPH % (link{https://github.com/pypr/pysph}{PySPH})
+                      \item Fully reproducible and open source. (\link{https://gitlab.com/pypr/ctvf}{Code link})
+                      \item \faGithub: \link{https://gitlab.com/pypr/ctvf}{https://gitlab.com/pypr/ctvf}
+                      \end{itemize}
+                    }
+                    {PySPH, SPH, Freesurfaceproblems, Python}
   \emptySeparator
   \experience
   {} {Elastic bodies collision with SPH-DEM coupling}{}{}
+  {} {
+                      \begin{itemize}
+                      \item  A contact force model incorporated into an updated-Lagrangian SPH is developed.
+                      \item  Unphysical interaction of the elastic solids within the classical SPH is eliminated.
+                      \item  The method can easily handle friction between two solids.
+                      \item  A careful investigation of primary and secondary bodies is conducted.
+                      \item  Several numerical examples are utilized to confirm the proposed model.
+                      \item  The source code is made available under an open source license.
+                        % \faGithub: \link{https://github.com/pypr/collision_sph} {github.com/pypr/collision_sph}
+                      \end{itemize}
+                    }
+                    {SPH, DEM, Elastic solids collision, Arbitrarily shaped solids}
+  \emptySeparator
+  \experience
+  {} {Rigid fluid coupling}{}{}
+  {}    {
+                    \begin{itemize}
+                        \item Apply the GMM, student-t mixture model, and Dirichlet process based infinite mixture modelto the brain MR image clustering problem;
+                        \item Derive the detail variational Bayesian inference process.
+                        \item Improve these three algorithms by using laplacian graph (manifold learning);
+                        \item \faGithub: \link{https://github.com/huajh/variational_bayesian_clusterings} {github.com/huajh/variational\_bayesian\_clusterings}
+                    \end{itemize}
+                  }
+                  {Mixture Model, Clustering, Dirichlet Process, Variational Bayes, Manifold Learnig}
+
+  \emptySeparator
+  \experience
+  {} {Fluid structure interaction}{}{}
   {}    {
     \begin{itemize}
-    \item Oct-Dec 2011, \emph{Online Works Show Platform} | \emph{Leader}. I designed and implemented a lightweight
-      relational object JDBC package, which is used for the programming of the server.
-      Got the 2\textsuperscript{nd} place of the contest judged by the TaoBao UED.
-      \faGithub: \link{https://github.com/huajh/showplatform}{github.com/huajh/showplatform}
-    \item Nov 2011, \emph{Unix File System} | \emph{Independent developer}. The system is implemented by the C/C++. It has basic shell commands, well performed
-      memory management,  as well as the users management, and it supports parallel operation.
-      \faGithub: \link{https://github.com/huajh/unix_file_sys}{github.com/huajh/unix\_file\_sys}
-    \end{itemize}
-  }
-  {JAVA, Unix, software development, Database, Sql Server}
-
-  \emptySeparator
-  \experience
-  {May 2013} {Rigid fluid coupling}{}{}
-  {Dec 2012 }    {
-    \begin{itemize}
-    \item Apply the GMM, student-t mixture model, and Dirichlet process based infinite mixture modelto the brain MR image clustering problem;
-    \item Derive the detail variational Bayesian inference process.
-    \item Improve these three algorithms by using laplacian graph (manifold learning);
-    \item \faGithub: \link{https://github.com/huajh/variational_bayesian_clusterings} {github.com/huajh/variational\_bayesian\_clusterings}
-    \end{itemize}
-  }
-  {Mixture Model, Clustering, Dirichlet Process, Variational Bayes, Manifold Learnig}
-
-  \emptySeparator
-  \experience
-  {Nov 2012} {Fluid structure interaction}{}{}
-  {Jul 2012 }    {
-    \begin{itemize}
-    \item  Responsible for the maintenance and development of Princeton Financial Systems.
-    \item As well as in charge of improving the performance of the system by integrating new technologies.
+        \item  Responsible for the maintenance and development of Princeton Financial Systems.
+        \item As well as in charge of improving the performance of the system by integrating new technologies.
     \end{itemize}
   }
   {C/C++ programming, C performance optimization, portfolio}
 
-  \emptySeparator
-  \experience
-  {Jul 2012} {Discrete element method}{}{}
-  {May 2011 }    {
-    \begin{itemize}
-    \item  Oct 2011-May 2012, write a paper \emph{Traffic routing algorithm based on the spatial complex networks};
-    \item  May-Sep 2011, work on the project: \emph{Motion Sensing PPT based on Kinect} | \emph{Programmer}.
-    \end{itemize}
-  }
-  {complex networks, kinect, C\#}
 
   \emptySeparator
   \experience
-  {}   {A parallel N-body software}{}{}
-  {} {
+  {} {A parallel N-body software}{}{}
+  {}    {
     \begin{itemize}
-    \item An parallel n-body software in memory safe Rust language.
-    \item Implemented linked-list based nearest neighbour search algorithm.
-    \item Applied to granular soil modeling.
-    \faGithub: \link{https://github.com/dineshadepu/prestige}{https://github.com/dineshadepu/prestige},
+      \item An parallel n-body software in memory safe Rust language.
+      \item Implemented linked-list based nearest neighbour search algorithm.
+      \item Applied to granular soil modeling.
+        \faGithub: \link{https://github.com/dineshadepu/prestige}{https://github.com/dineshadepu/prestige},
     \end{itemize}
   }
-  {N-body, parallel, Rust, Discrete element method}
+  {N-body, Rust, High performance computing, ECS, Discrete element method}
 
 
 \end{experiences}
+    % {} {Elastic bodies collision with SPH-DEM coupling}{}{}
+    % {}    {
+    %                   \begin{itemize}
+    %                   \item
+    %                   \end{itemize}
+    %                 }
+    %                 {SPH, DEM, Elastic solids collision, Arbitrarily shaped solids}

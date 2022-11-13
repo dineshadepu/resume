@@ -368,7 +368,7 @@
 %                    }
 %                    {<Technology list>}
 \newcommand\experience[7]{
-  \textsc{#1}    & \textsc{#2}
+  \textsc{#1}    & \textsc{#2 #3 #4}                                  \\*
   \textsc{#5}    & \begin{minipage}[t]{\rightcolumnlength}
                              #6
                    \end{minipage}										\\*
