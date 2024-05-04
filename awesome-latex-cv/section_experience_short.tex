@@ -8,11 +8,26 @@
 
 
 %Section: Work Experience at the top
-\sectionTitle{Projects \& Experiences}{\faCode}
+\sectionTitle{Projects}{\faCode}
 
 \begin{experiences}
 
+  \experience
+  {} {An SPH-DEM solver in Cabana (An exascale capable heterogenous computing particle library)}{}{}
+  {}    {
+    \begin{itemize}
+    \item Implemented the Discrete Element Method (DEM) within the Cabana
+      particle library, designed to operate efficiently on both GPU and CPU
+      architectures, supporting serial and parallel computations.
+    \item Adapting it to run simulations of hydrocolloids mixing in stirring
+      tanks at industry scale.
+    \item Cohesion among the solid particles is implemented using DMT model.
+      \faGithub: \link{https://github.com/dineshadepu/Cabana{\_}SPH{\_}DEM}{https://github.com/dineshadepu/Cabana{\_}SPH{\_}DEM},
+    \end{itemize}
+  }
+  {N-body, Cabana, Kokkos, C++, HPC, DEM, SPH, Heterogeneous computing}
 
+  \emptySeparator
   \experience
     {}   {A corrected transport-velocity formulation for fluid and structural mechanics with SPH}{}{}
     {} {
@@ -73,6 +88,4 @@
     \end{itemize}
   }
   {N-body, Rust, High performance computing, Entity-component-system (ECS), Discrete element method}
-
-
 \end{experiences}
