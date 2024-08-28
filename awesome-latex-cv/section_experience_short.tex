@@ -9,23 +9,35 @@
 
 %Section: Work Experience at the top
 \sectionTitle{Projects}{\faCode}
-
 \begin{experiences}
-
   \experience
-  {} {An SPH-DEM solver in Cabana (An exascale capable heterogenous computing particle library)}{}{}
+  {} {A DEM solver in Cabana (An exascale capable heterogenous computing particle library)}{}{}
   {}    {
     \begin{itemize}
     \item Implemented the Discrete Element Method (DEM) within the Cabana
       particle library, designed to operate efficiently on both GPU and CPU
       architectures, supporting serial and parallel computations.
+    \item Non-linear contact force model is employed.
+      \faGithub: \link{https://github.com/ExaPhysics/CabanaDEM}{https://github.com/ExaPhysics/CabanaDEM},
+    \end{itemize}
+  }
+  {N-body, Cabana, Kokkos, C++, HPC, DEM, Heterogeneous computing}
+
+  \experience
+  {} {An SPH-DEM solver in PySPH}{}{}
+  {}    {
+    \begin{itemize}
+    \item Implemented the Discrete Element Method (DEM) within the PySPH
+      particle library, designed to run CPU architectures, supporting serial and
+      parallel computations.
     \item Adapting it to run simulations of hydrocolloids mixing in stirring
       tanks at industry scale.
     \item Cohesion among the solid particles is implemented using DMT model.
-      \faGithub: \link{https://github.com/dineshadepu/Cabana{\_}SPH{\_}DEM}{https://github.com/dineshadepu/Cabana{\_}SPH{\_}DEM},
+    \item Particle swelling due to water absorption is implemented.
+      \faGithub: \link{https://github.com/dineshadepu/sph\_dem}{https://github.com/dineshadepu/sph\_dem},
     \end{itemize}
   }
-  {N-body, Cabana, Kokkos, C++, HPC, DEM, SPH, Heterogeneous computing}
+  {N-body, HPC, DEM, SPH}
 
   \emptySeparator
   \experience
