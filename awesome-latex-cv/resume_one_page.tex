@@ -1,0 +1,139 @@
+% !TEX TS-program = luatex
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/huajh/huajh-awesome-latex-cv
+%
+% Author:
+% Junhao Hua
+
+\documentclass[localFont]{awesome-source-cv}
+\geometry{margin=1.2cm}
+
+\name{Dinesh}{Adepu}
+
+\photo{2.5cm}{avatar1}
+\socialinfo{
+  \homepage{dineshadepu.github.io/}
+  \github{dineshadepu}
+  \linkedin{dinesh-adepu-88b3583b5} \\
+  \email{adepu.dinesh.a@gmail.com}\\
+}
+
+\begin{document}
+
+\makecvheader
+\vspace{-1.2cm}
+
+% -----------------------------------------------------------------------
+% Bio
+% -----------------------------------------------------------------------
+\par{
+  {\textbf{About.}}
+  I hold a PhD in Aerospace Engineering from the Indian Institute of
+  Technology Bombay, where I focused on mesh-free methods for solving
+  partial differential equations. I have postdoctoral research
+  experience at the University of Surrey, Indian Institute of Technology
+  Delhi, and currently at DWI Leibniz Institute for Interactive
+  Materials, working on particle dispersion, battery degradation, and
+  bioprinting processes. My expertise includes SPH, DEM, FEM, and FVM,
+  with a strong focus on developing scalable, high-performance
+  computational methods for large-scale and exascale systems.
+
+
+  % -----------------------------------------------------------------------
+  % Education & Experience
+  % -----------------------------------------------------------------------
+  \sectionTitle{Education \& Experience}{\faListUl}
+
+  \begin{tabular}{ll}
+    \textsc{Jan 2026 --\phantom{Jun 2025}}  & PostDoc, \emph{DWI -- RWTH Aachen, Germany} \quad Advisor: \link{https://www.dwi.rwth-aachen.de/en/person/prof-dr-raphael-wittkowski}{Prof. Raphael Wittkowski} \\
+    \textsc{Oct 2024 -- Jun 2025}           & PostDoc, \emph{IIT Delhi, India} \quad Advisor: \link{https://web.iitd.ac.in/~agupta/}{Prof. Amit Gupta} \\
+    \textsc{Apr 2023 -- Aug 2024}           & EPSRC PostDoc, \emph{University of Surrey, UK} \quad Advisor: \link{https://www.surrey.ac.uk/people/charley-wu}{Prof. Chuan-Yu Wu} \\
+    \textsc{Jul 2015 -- Jun 2023}           & \textbf{M.Tech + PhD} Aerospace Eng., \emph{IIT Bombay, India} \quad Advisor: \link{https://www.aero.iitb.ac.in/~prabhu}{Prof. Prabhu Ramachandran} \\
+    \textsc{Jul 2011 -- Jul 2015}           & \textbf{B.Tech} Aeronautical Eng., \emph{Institute of Aeronautical Engineering, Hyderabad, India} \\
+  \end{tabular}
+
+  % -----------------------------------------------------------------------
+  % Skills
+  % -----------------------------------------------------------------------
+  \sectionTitle{Skills}{\faListUl}
+  \renewcommand{\arraystretch}{1.1}
+
+  \begin{tabular}{>{}r>{}p{13cm}}
+    \textsc{Numerical modeling:} & Meshfree methods, Smoothed particle hydrodynamics,
+                                   Discrete element method (DEM), Bonded-DEM,
+                                   Finite element method,
+                                   Finite Volume method,
+                                   rigid-fluid coupling,
+                                   fluid-structure interaction,
+                                   3D Bio-Printing,
+                                   Elastic-plastic modeling.\\
+    \textsc{Programming Skills:}    &  C/C++, Python, Rust, Cuda, Lisp, \LaTeX, Git.\\
+    \textsc{Text editor:}    &  Emacs, Vim
+  \end{tabular}
+
+  % -----------------------------------------------------------------------
+  % Projects
+  % -----------------------------------------------------------------------
+  \sectionTitle{Projects}{\faCode}
+  \begin{experiences}
+
+    \experience
+    {} {Exascale particle solver development in Cabana}{}{}
+    {} {
+      \begin{itemize}
+      \item Developed a unified particle simulation framework in Cabana supporting SPH, DEM, rigid body dynamics, and elastic body contact.
+      \item Designed for heterogeneous architectures (CPU+GPU) using Kokkos, targeting scalable exascale systems.
+      \item Implemented advanced contact models and multiphysics coupling within a high-performance computing framework.
+      \end{itemize}
+    }
+    {Cabana, Kokkos, SPH, DEM, Rigid body dynamics, Elastic contact, HPC, Heterogeneous computing, Exascale}
+
+    \experience
+    {} {Battery degradation and dendrite modeling using FEM}{}{}
+    {} {
+      \begin{itemize}
+      \item Developed numerical models for dendrite growth and capacity degradation in second-life Li-ion batteries.
+      \item Implemented using the finite element method in FEniCSx.
+      \end{itemize}
+    }
+    {FEM, FEniCSx, Electrochemistry, Dendrite growth, Battery modeling}
+
+    \experience
+    {} {GPU-accelerated bioprinting simulation using FVM and Rust}{}{}
+    {} {
+      \begin{itemize}
+      \item Developed a fully GPU-based solver in Rust for simulating 3D bioprinting processes.
+      \item Coupled finite volume methods for compressible flow with particle-based solvers.
+      \item Modeled acoustophoretic transport and cell patterning in structured ultrasound fields.
+      \item \faGithub: \link{https://github.com/dineshadepu/prestige\_old}{prestige\_old}, \link{https://github.com/dineshadepu/jaali}{jaali}
+      \end{itemize}
+    }
+    {Rust, GPU computing, FVM, Acoustophorosis, Bioprinting, Multiphysics, HPC}
+
+    \experience
+    {} {SPH-based multiphysics solver development in PySPH}{}{}
+    {} {
+      \begin{itemize}
+      \item Developed comprehensive SPH-based solvers during PhD for fluid, solid, and rigid body dynamics.
+      \item Implemented SPH-DEM coupling, elastic-plastic models, and fluid-structure interaction (FSI).
+      \item Simulated free-surface flows, rigid-fluid coupling, and complex multiphysics problems.
+      \end{itemize}
+    }
+    {SPH, DEM, FSI, Multiphysics, PySPH, Elastic-plastic solids}
+
+    \experience
+    {} {Particle dispersion and swelling in stirred tanks}{}{}
+    {} {
+      \begin{itemize}
+      \item Developed fully resolved SPH-DEM models for particle dispersion, swelling, and agglomeration in fluid flows.
+      \item Applied to industrial-scale stirred tank simulations at the University of Surrey.
+      \item Currently extending the framework to LBM-IBM-DEM for advanced multiphysics coupling.
+      \end{itemize}
+    }
+    {SPH, DEM, Particle dispersion, Swelling, Stirred tanks, Multiphysics, LBM-IBM-DEM}
+
+  \end{experiences}
+
+\end{document}
